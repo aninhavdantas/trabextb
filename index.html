@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orgulho de Ser Quem Somos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: url('img/background.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 6rem 1rem;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3.2rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.4rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+    nav {
+      background: #222;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      color: #8B0000;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    section p {
+      font-size: 1.1rem;
+      text-align: justify;
+    }
+    .highlight {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .image-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .image-section img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .image-section img:hover {
+      transform: scale(1.05);
+    }
+    .ongs {
+      background: #f0f0f0;
+      padding: 2rem;
+      margin-top: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .ongs ul {
+      list-style: none;
+      padding: 0;
+      display: none;
+    }
+    .ongs li {
+      margin: 10px 0;
+    }
+    .ongs a {
+      color: #006400;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .ongs a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #222;
+      color: white;
+      margin-top: 2rem;
+    }
+    button {
+      background: #8B0000;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #228B22;
+    }
+
+    .timeline {
+  list-style: none;
+  padding: 0;
+}
+.timeline li {
+  margin: 15px 0;
+  padding: 10px;
+  border-left: 3px solid #8B0000;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.galeria img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Orgulho de Ser Quem Somos</h1>
+    <p>Celebrando nossas origens afro-indígenas e a diversidade do Brasil</p>
+  </header>
+
+  <nav>
+    <a href="#origens">Origens</a>
+    <a href="#pertencimento">Pertencimento</a>
+    <a href="#ongs">ONGs</a>
+  </nav>
+
+  <section id="origens">
+    <div class="highlight">
+      <h2>Nossas Origens</h2>
+      <p>O Brasil nasceu do encontro de diferentes povos e culturas. Muito antes da chegada dos europeus, nossas terras já eram habitadas por centenas de povos indígenas, cada um com sua língua, tradições e formas de viver em harmonia com a natureza. Eles são os guardiões originais deste território e representam a base da nossa identidade.
+
+Com o tempo, vieram os africanos, que apesar de terem sido trazidos à força pela escravidão, trouxeram consigo saberes, espiritualidade, resistência e uma riqueza cultural imensa, presente até hoje na música, na dança, na culinária e nas religiões de matriz africana.
+
+A influência europeia também marcou nossa história, misturando-se às raízes indígenas e africanas. Dessa mistura nasceu um povo diverso, criativo e cheio de cores, capaz de transformar dor em força e construir uma nação marcada pela pluralidade.
+
+Nossas origens são múltiplas, e é justamente essa diversidade que faz do Brasil um país único. Conhecer e valorizar essas raízes é reconhecer que o orgulho de ser quem somos está na união das histórias que nos formaram.</p>
+    </div>
+    <div class="image-section">
+      <img src="https://images.pexels.com/photos/27308030/pexels-photo-27308030.jpeg" alt="Cultura indígena">
+      <img src="https://images.pexels.com/photos/31570462/pexels-photo-31570462.png" alt="Cultura afro-brasileira">
+      <img src="https://media.istockphoto.com/id/1314259446/photo/twilight-at-the-amazon-rainforest.jpg?b=1&s=612x612&w=0&k=20&c=CaQZcUnNaI_0SPGnzHx7Pbb4owSNWUg2bzrFphuE3-I=" alt="paisagem brasileira">
+    </div>
+  </section>
+
+  <section id="pertencimento">
+    <div class="highlight">
+      <h2>Pertencimento</h2>
+      <p>Pertencer é reconhecer-se como parte de uma história maior. É olhar para as nossas raízes e entender que não estamos sozinhos: carregamos em nós a força de nossos ancestrais indígenas, africanos e de todos aqueles que ajudaram a construir o Brasil.
+
+O sentimento de pertencimento nasce quando valorizamos nossa identidade, respeitamos as diferenças e aprendemos a enxergar a beleza da diversidade. Cada cor, cada tradição, cada expressão cultural é um elo que nos conecta e fortalece.
+
+Assumir esse pertencimento é também um ato de resistência: é afirmar que nossa cultura não pode ser apagada, que nossas vozes precisam ser ouvidas e que nossa história deve ser celebrada com orgulho.
+
+Ser brasileiro é, acima de tudo, compreender que nossa identidade é feita de encontros, trocas e aprendizados. E que o verdadeiro orgulho de ser quem somos está em reconhecer a pluralidade que nos forma e nos une.</p>
+    </div>
+    <div class="image-section">
+      <img src="https://media.istockphoto.com/id/1277025351/photo/acaraje-brazilian-food.jpg?b=1&s=612x612&w=0&k=20&c=vRfdbPDTRAH7CDdu9k73MN81n4QWwriVCI-qtFj1DT8=" alt="Culinária tradicional">
+      <img src="https://static.todamateria.com.br/upload/ma/ra/maracatu-og.jpg" alt="Maracatu">
+      <img src="https://images.pexels.com/photos/14969148/pexels-photo-14969148.jpeg" alt="Arte indígena">
+    </div>
+  </section>
+
+  <section id="linha-tempo">
+  <h2>Linha do Tempo Cultural</h2>
+  <ul class="timeline">
+    <li><strong>Antes de 1500:</strong> Povos indígenas já habitavam o território brasileiro, com línguas, tradições e formas de viver em harmonia com a natureza.</li>
+    <li><strong>1500:</strong> Início da colonização portuguesa e primeiros contatos entre indígenas e europeus.</li>
+    <li><strong>Séculos XVI - XIX:</strong> Chegada forçada de africanos escravizados, que trouxeram saberes, espiritualidade e cultura.</li>
+    <li><strong>1888:</strong> Abolição da escravidão. Povos afrodescendentes seguem resistindo e construindo identidade.</li>
+    <li><strong>Hoje:</strong> O Brasil é fruto da diversidade, resistência e criatividade de suas origens afro-indígenas.</li>
+  </ul>
+</section>
+
+<section id="galeria">
+  <h2>Galeria Cultural</h2>
+  <div class="galeria">
+    <img src="https://thumbor.novaescola.org.br/UlJQL0PdUQ-UYj7sVRdT0Pfvtgo=/nova-escola-producao.s3.amazonaws.com/UbEJDdvq685Q7Wawqka53uqSkxkHwSzNUkhykVhG93WhfDwRVvsWWKE56ech/a-geometria-presente-na-arte-dos-povos-indigenas.jpg" alt="Retrato indígena brasileiro">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0oiaGnzJdjjl_x8TR1PC9z9P0IXW4lXI5zA&s" alt="Expressão afro-brasileira">
+    <img src="https://images.pexels.com/photos/10996892/pexels-photo-10996892.jpeg" alt="Manifestação cultural brasileira">
+  </div>
+</section>
+
+<section id="materiais">
+  <h2>Materiais Educativos</h2>
+  <p>Explore conteúdos para aprender mais sobre a cultura afro-indígena:</p>
+  <ul>
+    <li><a href="https://www.geledes.org.br/" target="_blank">Artigos sobre cultura afro-brasileira (Geledés)</a></li>
+    <li><a href="https://pib.socioambiental.org/" target="_blank">Enciclopédia dos Povos Indígenas</a></li>
+  </ul>
+</section>
+
+  <section id="ongs" class="ongs">
+    <h2>ONGs que Valorizam a Cultura Indígena e Afro-Brasileira</h2>
+    <p>Clique no botão abaixo para ver algumas ONGs que atuam no fortalecimento das culturas indígenas e afro-brasileiras:</p>
+    <ul id="lista-ongs"></ul>
+    <button onclick="toggleOngs()" id="btn-ongs">Mostrar ONGs</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Orgulho de Ser Quem Somos | Desenvolvido com amor por Ana Dantas e Mateus Barcelos</p>
+  </footer>
+
+  <script>
+    const ongs = [
+      {nome: "Instituto Socioambiental (ISA)", link: "https://www.socioambiental.org/"},
+      {nome: "Geledés - Instituto da Mulher Negra", link: "https://www.geledes.org.br/"},
+      {nome: "Fundação Palmares", link: "http://www.palmares.gov.br/"},
+      {nome: "COIAB - Coordenação das Organizações Indígenas da Amazônia Brasileira", link: "https://coiab.org.br/"}
+    ];
+
+    let ongsVisiveis = false;
+
+    function toggleOngs() {
+      const lista = document.getElementById("lista-ongs");
+      const botao = document.getElementById("btn-ongs");
+
+      if (!ongsVisiveis) {
+        lista.innerHTML = "";
+        ongs.forEach(ong => {
+          let li = document.createElement("li");
+          li.innerHTML = `<a href="${ong.link}" target="_blank">${ong.nome}</a>`;
+          lista.appendChild(li);
+        });
+        lista.style.display = "block";
+        botao.textContent = "Ocultar ONGs";
+        ongsVisiveis = true;
+      } else {
+        lista.style.display = "none";
+        botao.textContent = "Mostrar ONGs";
+        ongsVisiveis = false;
+      } 
+      
+    }
+  </script>
+</body>
+</html>
